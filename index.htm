@@ -1,0 +1,73 @@
+<!DOCTYPE html">
+<html>
+<head>
+
+<title>My Mobile page</title>
+  <link rel="stylesheet" href="themes/myTheme.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+
+<body>
+	<div data-role="page" id="page1" data-theme="d">
+		<div data-role="header">
+		<h1>My Portfolio App</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page1" data-icon="grid">Home</a></li> <!-- action, alert, audio, arrow-d-l, arrow-d-r, bars, bullets, calendar, camera, check, clock, cloud, delete, edit, eye, forbidden, forward, gear, grid, heart, video -->
+				<li><a href="#page2" data-icon="grid">Contact</a></li>
+			</ul>
+		</div>
+		<div data-role="main" class="ui-content">
+		<h1>Danny Carlton</h1>
+		<p>An IT professional with business knowledges and expertise.</p>
+		<div data-role="collapsible">
+		<h1>Past Work </h1>
+		<p>Look at my past work...</p>
+<!--		<a href="#page2">Page 2</a>		-->		<!-- fade, flip, flow, pop, slide, slidedown, slideface, slideup, turn, none -->
+		</div>
+		<div data-role="collapsible">
+		<h1>Education</h1>
+		<p>Teaching myself to code...</p>
+<!--		<a href="#page2">Page 2</a>		-->		<!-- fade, flip, flow, pop, slide, slidedown, slideface, slideup, turn, none -->
+		</div>		
+		
+		<div data-role="footer">
+		<h2>&copy; Danny Carlton 2021</h2>
+		</div>
+	</div>
+	</div>
+	</div>
+	
+	<div data-role="page" id="page2" data-theme="d">
+		<div data-role="header">
+			<h1>My Portfolio App</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-icon="grid">Home</a></li> <!-- action, alert, audio, arrow-d-l, arrow-d-r, bars, bullets, calendar, camera, check, clock, cloud, delete, edit, eye, forbidden, forward, gear, grid, heart, video -->
+					<li><a href="#page2" data-icon="grid">Contact</a></li>
+				</ul>
+				
+			</div>
+			<div data-role="main" class="ui-content">
+				<h1>Contact Me</h1>
+				<form>
+					<label for="essay">Tell Us what you think</label>
+					<textarea name="essay" id="essay" placeholder="Tell us how great we are!"></textarea>
+					<label for "rate">Rate us out of 10 </label>
+					<input type="range" name="rate" id="rate" min="0" max="10" value="10"/>
+					<input type="submit" name="go" id="go" value="Rate My App"/>
+				</form>
+			</div>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Danny Carlton 2021</h2>
+		</div>
+	</div>
+</body>
+
+</html>
